@@ -19,7 +19,7 @@ cd
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf 
 cd
-sudo pacman -S zsh-theme-powerlevel10k papirus-icon-theme p7zip unrar zip unzip gzip bzip2 gtk3-nocsdlzop alsa-plugins alsa-utils ttf-dejavu ttf-liberation ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm 
+sudo pacman -S zsh-theme-powerlevel10k papirus-icon-theme p7zip unrar zip unzip gzip bzip2 alsa-plugins alsa-utils ttf-dejavu ttf-liberation ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm 
 sudo systemctl enable lightdm
 sudo cp -R bspwmbydarch/pegarenroot/fzf/* /usr/share/fzf
 sudo cp -R bspwmbydarch/pegarenroot/gtk/iconos/* /usr/share/icons
@@ -27,6 +27,7 @@ sudo cp -R bspwmbydarch/pegarenroot/gtk/temas/* /usr/share/themes
 sudo cp -R bspwmbydarch/pegarenroot/wall/* /usr/share/
 yay -S ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras --noeditmenu --noconfirm 
 
+clear
 #Script de aplicar tema y limpiar archivos basura. 
 
 temas
@@ -34,6 +35,9 @@ limpiar
 
 clear
 
-echo "BspwmbyDarch instaado"
+neofetch
+sleep 5
+echo "BspwmbyDarch instalado"
 sleep 5
 clear
+reboot
