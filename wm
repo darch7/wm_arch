@@ -6,7 +6,9 @@ while true; do
   kill -0 $$ 2>/dev/null || exit
 done &
 
-#Instalar bspwmbydarch 
+#Instalar bspwmbydarch
+cd 
+sudo pacman -Sy bspwm sxhkd --noconfirm -needed
 git clone https://github.com/darch7/bspwmbydarch
 cp -R bspwmbydarch/config/* ~/.config 
 cp -R bspwmbydarch/.local ~/ 
