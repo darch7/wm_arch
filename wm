@@ -8,7 +8,7 @@ done &
 
 #Instalar bspwmbydarch
 cd 
-sudo pacman -Sy bspwm sxhkd --noconfirm -needed
+sudo pacman -S bspwm sxhkd --noconfirm --needed
 git clone https://github.com/darch7/bspwmbydarch
 cp -R bspwmbydarch/config/* ~/.config 
 cp -R bspwmbydarch/.local ~/ 
@@ -36,6 +36,7 @@ limpiar
 clear
 
 neofetch
+
 sleep 5
 echo "BspwmbyDarch instalado"
 sleep 5
