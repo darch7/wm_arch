@@ -12,7 +12,7 @@ sudo pacman -S bspwm sxhkd --noconfirm --needed
 git clone https://github.com/darch7/bspwmbydarch
 cp -R bspwmbydarch/config/* ~/.config 
 cp -R bspwmbydarch/.local ~/ 
-cp -R .* bspwmbydarch/home/.* ~/ 
+cp -R bspwmbydarch/home/.* ~/ 
 cd bspwmbydarch/compilar/st 
 sudo make install 
 cd 
