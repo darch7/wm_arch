@@ -10,7 +10,7 @@ done &
 cd 
 sudo pacman -S bspwm sxhkd --noconfirm --needed
 git clone https://github.com/darch7/bspwmbydarch
-cp -R bspwmbydarch/config/* $HOME/.config 
+cp -R bspwmbydarch/config/* $HOME/.config/ 
 cp -R bspwmbydarch/.local $HOME/ 
 sudo chmod +x .local/bin/scripts
 cp -R bspwmbydarch/home/.* ~$HOME/ 
@@ -30,6 +30,8 @@ clear
 
 neofetch
 sleep 5
+uname -r 
+sleep 3
 
 echo "BspwmbyDarch instalado"
 sleep 5
