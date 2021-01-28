@@ -10,10 +10,10 @@ done &
 cd 
 sudo pacman -S bspwm sxhkd --noconfirm --needed
 git clone https://github.com/darch7/bspwmbydarch
-cp -R bspwmbydarch/config/* ~/.config 
-cp -R bspwmbydarch/.local ~/ 
+cp -R bspwmbydarch/config/* $HOME/.config 
+cp -R bspwmbydarch/.local $HOME/ 
 sudo chmod +x .local/bin/scripts
-cp -R bspwmbydarch/home/.* ~/ 
+cp -R bspwmbydarch/home/.* ~$HOME/ 
 cd bspwmbydarch/compilar/st 
 sudo make install 
 cd 
