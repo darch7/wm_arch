@@ -1,1 +1,1 @@
-# bspwmscript
+# wmscript
