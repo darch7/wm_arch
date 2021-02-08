@@ -7,10 +7,10 @@ git clone https://github.com/darch7/wm && cd wm && ./wm
 
 
 
-#Que contiene el instalador?
+###Que contiene el instalador?
 instala bspwm, la terminal st, polybar junto con sus modulos y algunos scripts para facilidad de uso. (todo se encuentra en el pdf alt + F12 o click donde esta tu usuario en polybar)
 
-#programas:
+###programas:
 -zsh y sus plugins mas comunes
 
 -iconos de papirus
@@ -85,6 +85,6 @@ instala bspwm, la terminal st, polybar junto con sus modulos y algunos scripts p
 
 -google chrome (mi navegador predeterminado instala el que usas tu)
 
-#trato de tener un bspwm para mi uso cotidiano y universitario en lo posible con aplicaciones minimal ese es el enfoque de esta configuracion.
-#buena suerte!
+###trato de tener un bspwm para mi uso cotidiano y universitario en lo posible con aplicaciones minimal ese es el enfoque de esta configuracion.
+###buena suerte!
 
