@@ -51,4 +51,3 @@ instala bspwm, la terminal st, polybar junto con sus modulos y algunos scripts p
 
 #trato de tener un bspwm para mi uso cotidiano y universitario en lo posible con aplicaciones minimal ese es el enfoque de esta configuracion.
 #buena suerte!
-
