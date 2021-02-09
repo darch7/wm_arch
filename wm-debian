@@ -1,0 +1,42 @@
+#!/bin/sh
+
+
+echo " ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗██████╗ ██╗   ██╗██████╗  █████╗ ██████╗  ██████╗██╗  ██╗        ";
+echo " ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗██╔════╝██║  ██║		     ";
+echo " ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║██████╔╝ ╚████╔╝ ██║  ██║███████║██████╔╝██║     ███████║	       ";
+echo " ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║██╔══██╗  ╚██╔╝  ██║  ██║██╔══██║██╔══██╗██║     ██╔══██║	       ";
+echo " ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║██████╔╝   ██║   ██████╔╝██║  ██║██║  ██║╚██████╗██║  ██║	       ";
+echo " ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝╚═════╝    ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝        ";
+                                                                                                      
+sleep 3
+
+sudo -v
+while true; do
+  sudo -nv; sleep 1m
+  kill -0 $$ 2>/dev/null || exit
+done &
+
+#Instalar bspwmbydarch
+cd 
+sudo pacman -S bspwm sxhkd --noconfirm --needed
+git clone https://github.com/darch7/bspwmbydarch
+cp -R bspwmbydarch/config/* $HOME/.config/ 
+cp -R bspwmbydarch/.local $HOME/ 
+sudo chmod +x .local/bin/scripts
+cp -R bspwmbydarch/home/.[^.]* $HOME/ 
+cd bspwmbydarch/compilar/st 
+sudo make install 
+cd 
+sudo cp -R bspwmbydarch/root/gtk/iconos/* /usr/share/icons
+sudo cp -R bspwmbydarch/root/gtk/temas/* /usr/share/themes
+sudo cp -R bspwmbydarch/root/wall/* /usr/share/
+
+neofetch
+sleep 5
+uname -r 
+sleep 3
+
+echo "BspwmbyDarch instalado"
+sleep 5
+clear
+reboot
