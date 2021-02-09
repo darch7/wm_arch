@@ -16,9 +16,12 @@ while true; do
   kill -0 $$ 2>/dev/null || exit
 done &
 
+#sudo apt install sudo y mandarlo con sed e usuario a sudoers
+#instalar xorg xbackight
 #Instalar bspwmbydarch
 cd 
-sudo pacman -S bspwm sxhkd --noconfirm --needed
+sudo apt install bspwm sxhkd xdg-user-dirs
+xdg-user-dirs-update
 git clone https://github.com/darch7/bspwmbydarch
 cp -R bspwmbydarch/config/* $HOME/.config/ 
 cp -R bspwmbydarch/.local $HOME/ 
