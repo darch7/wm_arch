@@ -1,13 +1,14 @@
 #!/bin/sh
 
 
-echo " ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗██████╗ ██╗   ██╗██████╗  █████╗ ██████╗  ██████╗██╗  ██╗        ";
-echo " ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗██╔════╝██║  ██║		     ";
-echo " ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║██████╔╝ ╚████╔╝ ██║  ██║███████║██████╔╝██║     ███████║	       ";
-echo " ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║██╔══██╗  ╚██╔╝  ██║  ██║██╔══██║██╔══██╗██║     ██╔══██║	       ";
-echo " ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║██████╔╝   ██║   ██████╔╝██║  ██║██║  ██║╚██████╗██║  ██║	       ";
-echo " ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝╚═════╝    ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝        ";
-                                                                                                      
+ 
+echo " ██████╗ ███████╗██████╗ ██╗    ██╗███╗   ███╗██████╗ ██╗   ██╗██████╗  █████╗ ██████╗  ██████╗██╗  ██╗      ██████╗ ███████╗██████╗ ██╗ █████╗ ███╗   ██╗  ";
+echo " ██╔══██╗██╔════╝██╔══██╗██║    ██║████╗ ████║██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗██╔════╝██║  ██║      ██╔══██╗██╔════╝██╔══██╗██║██╔══██╗████╗  ██║  ";
+echo " ██████╔╝███████╗██████╔╝██║ █╗ ██║██╔████╔██║██████╔╝ ╚████╔╝ ██║  ██║███████║██████╔╝██║     ███████║█████╗██║  ██║█████╗  ██████╔╝██║███████║██╔██╗ ██║  ";
+echo " ██╔══██╗╚════██║██╔═══╝ ██║███╗██║██║╚██╔╝██║██╔══██╗  ╚██╔╝  ██║  ██║██╔══██║██╔══██╗██║     ██╔══██║╚════╝██║  ██║██╔══╝  ██╔══██╗██║██╔══██║██║╚██╗██║  ";
+echo " ██████╔╝███████║██║     ╚███╔███╔╝██║ ╚═╝ ██║██████╔╝   ██║   ██████╔╝██║  ██║██║  ██║╚██████╗██║  ██║      ██████╔╝███████╗██████╔╝██║██║  ██║██║ ╚████║  ";
+echo " ╚═════╝ ╚══════╝╚═╝      ╚══╝╚══╝ ╚═╝     ╚═╝╚═════╝    ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝      ╚═════╝ ╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝  ";
+                                                                                                                                                                                                                                                                     
 sleep 3
 
 sudo -v
@@ -20,19 +21,19 @@ done &
 #instalar xorg xbackight
 #Instalar bspwmbydarch
 cd 
-sudo apt install bspwm sxhkd xdg-user-dirs
+sudo apt install bspwm sxhkd xdg-user-dirs cmake make git curl wget 
 xdg-user-dirs-update
-git clone https://github.com/darch7/bspwmbydarch
-cp -R bspwmbydarch/config/* $HOME/.config/ 
-cp -R bspwmbydarch/.local $HOME/ 
+git clone https://github.com/darch7/bspwmbydarch-debian
+cp -R bspwmbydarch-debian/config/* $HOME/.config/ 
+cp -R bspwmbydarch-debian/.local $HOME/ 
 sudo chmod +x .local/bin/scripts
-cp -R bspwmbydarch/home/.[^.]* $HOME/ 
-cd bspwmbydarch/compilar/st 
+cp -R bspwmbydarch-debian/home/.[^.]* $HOME/ 
+cd bspwmbydarch-debian/compilar/st 
 sudo make install 
 cd 
-sudo cp -R bspwmbydarch/root/gtk/iconos/* /usr/share/icons
-sudo cp -R bspwmbydarch/root/gtk/temas/* /usr/share/themes
-sudo cp -R bspwmbydarch/root/wall/* /usr/share/
+sudo cp -R bspwmbydarch-debian/root/gtk/iconos/* /usr/share/icons
+sudo cp -R bspwmbydarch-debian/root/gtk/temas/* /usr/share/themes
+sudo cp -R bspwmbydarch-debian/root/wall/* /usr/share/
 
 neofetch
 sleep 5
