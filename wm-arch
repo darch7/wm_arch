@@ -33,7 +33,7 @@ sudo cp -R bspwmbydarch/root/fzf/* /usr/share/fzf
 sudo cp -R bspwmbydarch/root/gtk/iconos/* /usr/share/icons
 sudo cp -R bspwmbydarch/root/gtk/temas/* /usr/share/themes
 sudo cp -R bspwmbydarch/root/wall/* /usr/share/
-yay -S gtk3-nocsd-git ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras google-chrome --noeditmenu --noconfirm 
+yay -S gtk3-nocsd-git picom-ibhagwan-git polybar-git fzf-extras google-chrome --noeditmenu --noconfirm 
 yay -Rns i3-wm --noeditmenu --noconfirm 
 sudo pacman -Rns $(pacman -Qtdq) --noconfirm
 
