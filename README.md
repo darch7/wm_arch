@@ -7,6 +7,8 @@ git clone https://github.com/darch7/wm && cd wm && ./wm
 
 
 
+Nota: Antes de instalar si tiene un Display Manager desistalalo y desactivalo de systemd porque el script instala uno, para evitar fallos.
+
 ###Que contiene el instalador?
 instala bspwm, la terminal st, polybar junto con sus modulos y algunos scripts para facilidad de uso. (todo se encuentra en el pdf alt + F12 o click donde esta tu usuario en polybar)
 
