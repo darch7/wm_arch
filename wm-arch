@@ -36,7 +36,7 @@ sudo cp -R bspwmbydarch/root/wall/* /usr/share/
 yay -S gtk3-nocsd-git ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras google-chrome --noeditmenu --noconfirm 
 yay -Rns i3-wm --noeditmenu --noconfirm 
 sudo pacman -Rns $(pacman -Qtdq) --noconfirm
-
+chsh -s /bin/zsh
 clear
 
 neofetch
