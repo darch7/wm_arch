@@ -1,6 +1,6 @@
 # wmscript
 
-Donaciones para un nuevo mate: https://paypal.me/darch7
+**Donaciones para un nuevo mate 🧉**: **https://paypal.me/darch7**
 
 -------------------------------------------------------------------------------------------------
 
