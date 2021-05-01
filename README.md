@@ -1,5 +1,7 @@
 # wmscript
 
+Donaciones para un nuevo mate: https://paypal.me/darch7
+
 git clone https://github.com/darch7/wm && cd wm && ./wm-arch
 
 
