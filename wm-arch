@@ -48,6 +48,7 @@ neofetch
 sleep 5
 uname -r 
 sleep 3
+rm -rf wm_arch
 
 echo "BspwmbyDarch instalado"
 sleep 5
