@@ -50,6 +50,7 @@ sleep 5
 uname -r 
 sleep 3
 rm -rf wm_arch
+rm -rf bspwmbydarch
 
 echo "BspwmbyDarch instalado"
 sleep 5
