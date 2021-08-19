@@ -33,11 +33,16 @@ sudo cp -R bspwmbydarch/root/fzf/* /usr/share/fzf
 sudo cp -R bspwmbydarch/root/gtk/iconos/* /usr/share/icons
 sudo cp -R bspwmbydarch/root/gtk/temas/* /usr/share/themes
 sudo cp -R bspwmbydarch/root/wall/* /usr/share/
-paru -S gtk3-nocsd-git ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras brave-bin --noeditmenu --noconfirm 
-paru -Rns i3-wm --noeditmenu --noconfirm 
+paru -S gtk3-nocsd-git ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras brave-bin --noconfirm 
+paru -Rns i3-wm --noconfirm 
 sudo pacman -Rns $(pacman -Qtdq) --noconfirm
 chsh -s /bin/zsh
 clear
+
+# creacion de .xinitrc
+touch .xinitrc
+echo "exec bspwm" > ~/.xinitrc
+sleep 2 
 
 neofetch
 sleep 5
