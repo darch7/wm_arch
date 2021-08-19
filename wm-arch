@@ -27,14 +27,14 @@ cp -R bspwmbydarch/home/.[^.]* $HOME/
 cd bspwmbydarch/compilar/st 
 sudo make clean install 
 cd 
-sudo pacman -S zsh-theme-powerlevel10k papirus-icon-theme p7zip unrar zip unzip gzip bzip2 alsa-plugins alsa-utils ttf-dejavu ttf-liberation ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome --needed --noconfirm 
-sudo systemctl enable lightdm
+sudo pacman -S zsh-theme-powerlevel10k papirus-icon-theme p7zip unrar zip unzip gzip bzip2 alsa-plugins alsa-utils ttf-dejavu ttf-liberation ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts lightdm slim adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome --needed --noconfirm 
+sudo systemctl enable slim
 sudo cp -R bspwmbydarch/root/fzf/* /usr/share/fzf
 sudo cp -R bspwmbydarch/root/gtk/iconos/* /usr/share/icons
 sudo cp -R bspwmbydarch/root/gtk/temas/* /usr/share/themes
 sudo cp -R bspwmbydarch/root/wall/* /usr/share/
-yay -S gtk3-nocsd-git ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras google-chrome --noeditmenu --noconfirm 
-yay -Rns i3-wm --noeditmenu --noconfirm 
+paru -S gtk3-nocsd-git ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras brave-bin --noeditmenu --noconfirm 
+paru -Rns i3-wm --noeditmenu --noconfirm 
 sudo pacman -Rns $(pacman -Qtdq) --noconfirm
 chsh -s /bin/zsh
 clear
