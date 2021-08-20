@@ -33,7 +33,8 @@ sudo cp -R bspwmbydarch/root/fzf/* /usr/share/fzf
 sudo cp -R bspwmbydarch/root/gtk/iconos/* /usr/share/icons
 sudo cp -R bspwmbydarch/root/gtk/temas/* /usr/share/themes
 sudo rm -r /usr/share/slim/themes/default/*
-sudo cp -R bspwmbydarch/root/gtk/sim/* /usr/share/slim/themes/default/
+sllep 2
+sudo cp -R bspwmbydarch/root/gtk/sim/* /usr/share/slim/themes/default
 paru -S gtk3-nocsd-git ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras brave-bin --noconfirm 
 paru -Rns i3-wm --noconfirm 
 sudo pacman -Rns $(pacman -Qtdq) --noconfirm
