@@ -7,7 +7,7 @@
 git clone https://github.com/darch7/wm && cd wm && ./wm-arch
 
 
-![IMG_20210131_012840_517](https://user-images.githubusercontent.com/70046164/106374628-c13f5f00-6363-11eb-840e-310f7c6f0ff6.png)
+![D-shot-LVSD_2021-08-23-231243](https://user-images.githubusercontent.com/70046164/130544911-aed511d2-d0cd-4d28-bb13-237ca6b9b923.png)
 
 
 
